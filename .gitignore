@@ -1,0 +1,59 @@
+# Secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Human / identifiable / instrument raw data — keep on the lab Mac only
+data/raw/*
+!data/raw/.gitignore
+data/participants/*
+!data/participants/.gitignore
+data/identified/
+**/participant*/
+**/subject_id*
+*consent*
+*.edf
+*.bdf
+*.acq
+*.mat
+*.h5
+*.hdf5
+*.npy
+*.npz
+*.wav
+*.bin
+*.tdms
+
+# Large local snapshots until reviewed (Codex incoming may contain data)
+incoming/**/data/
+incoming/**/*.csv
+incoming/**/*.edf
+incoming/**/*.mat
+incoming/**/*.h5
+incoming/**/*.npy
+incoming/**/*.npz
+
+# Local Codex / ChatGPT export trees
+Codex/
+**/referenced-chatgpt-conversation*/
